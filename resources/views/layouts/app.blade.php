@@ -9,9 +9,11 @@
 <body>
 @include('partials.navbar')
 
-    <div class="container">
+    <div class="py-10 flex justify-center">
         @yield('content')
     </div>
+
+@include('partials.footer')
     <script src="{{asset('js/app.js')}}"></script>
 </body>
 </html>
