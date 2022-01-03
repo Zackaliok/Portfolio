@@ -1,4 +1,4 @@
-<!--<footer role="footer" class="flex flex-col items-center justify-around bg-red-100 h-96">
+<footer role="footer" class="flex flex-col items-center justify-around bg-slate-100 h-96">
     <img src="medias/logo2.png" width="100px">
     <div class="flex justify-around">
         <button class="px-3"><img src="medias/twitter.png" width="40px"></buttonclass>
@@ -13,4 +13,4 @@
     </div>
 
     <p>© {{date("Y")}} Tristan Fumiere, All rights reserved</p>
-</footer>-->
+</footer>

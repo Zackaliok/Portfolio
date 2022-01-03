@@ -3,9 +3,9 @@ use Illuminate\Support\Facades\Route;
 $name = Route::currentRouteName();
 ?>
 
-<nav class="bg-white shadow-lg">
+<nav class="bg-slate-100 shadow-lg">
     <div class="max-w-6xl mx-auto px-4">
-        <div class="flex justify-between">
+        <div class="flex justify-center">
             <div class="flex space-x-7">
                 <div>
                     <!-- Website Logo -->

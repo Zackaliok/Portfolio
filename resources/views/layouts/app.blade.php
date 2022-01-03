@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <title>Tristan Fumiere</title>
 </head>
-<body>
+<body class="flex flex-col justify-between">
 @include('partials.navbar')
 
 

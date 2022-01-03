@@ -3,13 +3,7 @@
 @tailwind utilities;
 
 
-footer {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
+
 
 #autotext {
     border-right: 0.15em solid deeppink;
