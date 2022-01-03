@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EmailController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,12 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layouts/app');
+    return view('home');
 })->name('welcome');
 
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
+Route::get('/contact', [EmailController::class, 'create'])->name('contact.show');
+Route::post('/contact', [EmailController::class, 'sendEmail'])->name('send.email');
 
 Route::get('/projects', function () {
         return view('projects');
@@ -28,6 +28,7 @@ Route::get('/projects', function () {
 Route::get('/technologies', function () {
     return view('technologies');
 })->name('technologies');
+
 
 Route::fallback(function () {
    return view('404');

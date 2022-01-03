@@ -3,6 +3,26 @@
 @tailwind utilities;
 
 
-h1 {
-    color: red;
+footer {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#autotext {
+    border-right: 0.15em solid deeppink;
+    letter-spacing: 0.05em;
+    animation: blink infinite step-end 1s;
+}
+
+@keyframes blink {
+    from,
+    to{
+        border-color: transparent;
+    }
+    50% {
+        border-color: deeppink;
+    }
 }

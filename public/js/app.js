@@ -2060,7 +2060,30 @@ module.exports = {
   \*****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // Partie pour faire l'effet d'écriture
+
+
+var title = document.getElementById('autotext');
+var text = "Hello There ! I'M TRISTAN FUMIERE";
+var index = 0;
+
+var randomSpeed = function randomSpeed(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+};
+
+var play = function play() {
+  title.innerHTML = text.slice(0, index);
+  index++;
+
+  if (index > text.length) {
+    index = 0;
+  }
+
+  clearInterval(timer);
+  timer = setInterval(play, randomSpeed(50, 300));
+};
+
+var timer = setInterval(play, 300); // ---------------------------------
 
 /***/ }),
 
