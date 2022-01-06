@@ -4,7 +4,7 @@ require('./bootstrap');
 // Partie pour faire l'effet d'écriture
 
 const title = document.getElementById('autotext');
-const text = "I'M TRISTAN FUMIERE";
+const text = "JE SUIS TRISTAN FUMIERE";
 
 let index = 0;
 

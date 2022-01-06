@@ -2064,7 +2064,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // Partie
 
 
 var title = document.getElementById('autotext');
-var text = "I'M TRISTAN FUMIERE";
+var text = "JE SUIS TRISTAN FUMIERE";
 var index = 0;
 
 var randomSpeed = function randomSpeed(min, max) {

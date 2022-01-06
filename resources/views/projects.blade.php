@@ -10,7 +10,7 @@
                 background-size: cover;"
          class="flex flex-col align-middle">
 
-        <h1 class="text-white text-center text-9xl font-semibold" style="padding-top: 1em;">ALL MY PROJECTS</h1>
+        <h1 class="text-white text-center text-9xl font-semibold" style="padding-top: 1em;">Mes Projets</h1>
 
         <div class="flex justify-around">
             <!-- MONOPOLY CARD -->
