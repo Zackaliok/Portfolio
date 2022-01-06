@@ -7,6 +7,7 @@
     <title>Admin</title>
 </head>
 <body class="flex flex-col justify-between">
+@include('admin-tools.navbar')
 
 @yield('content')
 

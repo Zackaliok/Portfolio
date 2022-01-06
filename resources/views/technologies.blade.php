@@ -8,7 +8,7 @@
 
         <h1 class="text-white align-middle text-center text-9xl font-semibold" style="padding-top: 1em;">Technologies</h1>
 
-        <div class="flex  justify-around">
+        <div class="flex  justify-around flex-wrap">
 
             @foreach($techs as $tech)
                 <div class="min-h-screen flex flex-col justify-center ">
