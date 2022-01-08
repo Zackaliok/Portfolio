@@ -2,7 +2,9 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\EmailController;
+use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\TechsController;
+use App\Http\Controllers\ToolsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,12 +24,13 @@ Route::get('/', function () {
 
 Route::get('/contact', [EmailController::class, 'create'])->name('contact.show');
 Route::post('/contact', [EmailController::class, 'sendEmail'])->name('send.email');
-
+/*
 Route::get('/projects', function () {
         return view('projects');
-})->name('projects');
+})->name('projects');*/
 
-Route::get('/technologies', [TechsController::class, 'index'])->name('technologies');
+Route::get('/projects', [AdminController::class, 'showProjects'])->name('projects');
+Route::get('/technologies', [AdminController::class, 'showTechsToolsPage'])->name('technologies');
 
 
 /* Admin Section */
@@ -37,8 +40,15 @@ Route::post('/admin/home', [AdminController::class, "showPanel"])->name("show.pa
 Route::get('/admin/techs', [AdminController::class, 'techsPanel'])->name('techsPanel');
 Route::post('/admin/techs', [TechsController::class, 'update'])->name('update.techs');
 
+Route::get('/admin/tools', [AdminController::class, 'toolsPanel'])->name('toolsPanel');
+Route::post('/admin/tools', [ToolsController::class, 'update'])->name('update.tools');
+
 Route::get('/admin/projects', [AdminController::class, 'projectsPanel'])->name('projectsPanel');
-Route::post('/admin/projects', [])->name('update.projects');
+Route::post('/admin/projects', [ProjectsController::class, 'update'])->name('update.projects');
+
+Route::get('/admin/cv', [AdminController::class, 'cvPanel'])->name('cvPanel');
+Route::post('/admin/cv', [AdminController::class, 'uploadCv'])->name('upload.cv');
+
 
 Route::fallback(function () {
    return view('404');

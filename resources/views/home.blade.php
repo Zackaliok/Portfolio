@@ -28,7 +28,7 @@
             <!--<p>I am fluent in classics like Java, Javascript and PHP...</p>-->
             <!--<p>My field of Interest's are building new Web Technologies and Products</p>-->
             <p>Mes centres d'intérêts sont de construire de nouvelles technologies et produits web</p>
-            <p>Quand j'ai le temps, le m'applique aussi à découvrir de nouvelles technologies comme React.js et autres.</p>
+            <p>Quand j'ai le temps, je m'applique aussi à découvrir de nouvelles technologies comme React.js et autres.</p>
             <!--<p>Whenever possible, I also apply my passion for learning new technologies like React.js ...</p>-->
         </div>
     </div>

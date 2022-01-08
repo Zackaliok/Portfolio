@@ -16,7 +16,7 @@
                         <div class="relative px-4   shadow-lg sm:rounded-3xl sm:p-20 bg-clip-padding bg-opacity-70" style="backdrop-filter: blur(20px);">
                             <div class="max-w-md mx-auto flex flex-col items-center">
 
-                                <img src="{{$tech->url}}"/>
+                                <img src="{{$tech->url}}" width="96px"/>
 
                                 <div class="divide-y divide-gray-200">
                                     <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
@@ -49,30 +49,13 @@
 
         <div class="flex flex-wrap justify-around py-10">
 
-            <!-- VS CODE -->
-            <div class="py-5 px-5 bg-opacity-70" style="backdrop-filter: blur(20px);">
-                <img src="/medias/tools/logo-vs.png">
-            </div>
+            @foreach($tools as $tool)
+                <div class="py-5 px-5 bg-opacity-70" style="backdrop-filter: blur(20px);">
+                    <img src="{{$tool->url}}">
+                </div>
+            @endforeach
 
-            <!-- Jetbrain -->
-            <div class="py-5 px-5 bg-opacity-70" style="backdrop-filter: blur(20px);">
-                <img src="/medias/tools/logo-jetbrain.svg" width="96px">
-            </div>
 
-            <!-- Linux -->
-            <div class="py-5 px-5 bg-opacity-70" style="backdrop-filter: blur(20px);">
-                <img src="/medias/tools/logo-linux.png">
-            </div>
-
-            <!-- Github -->
-            <div class="py-5 px-5 bg-opacity-70" style="backdrop-filter: blur(20px);">
-                <img src="/medias/tools/logo-github.svg" width="96px">
-            </div>
-
-            <!-- Gitlab -->
-            <div class="py-5 px-5 bg-opacity-70" style="backdrop-filter: blur(20px);">
-                <img src="/medias/tools/logo-gitlab.png">
-            </div>
 
         </div>
 
